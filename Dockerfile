@@ -7,4 +7,4 @@ LABEL Description="squid proxy"  \
 
 RUN apk add --no-cache squid
 
-ENTRYPOINT ["/usr/sbin/squid", "-N"]
+ENTRYPOINT ["/usr/sbin/squid", "-X", "-N"]
